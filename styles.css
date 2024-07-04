@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c39363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+fieldset {
+    
+    display:auto; /* Makes the fieldset shrink to fit content */
+    padding: 140px; /* Add padding for better appearance */
+    border: 7px solid #FFD700 ; /* Optional: Add border styling */
+    border-radius: 5px;
+    
+}
+
+legend {
+    padding: 5px;
+    color: #000000;
+    text-decoration: wavy;
+    font-weight:bolder;
+    font-size: 28px;
+}
+
+label {
+    display:contents; /* Ensures each label is on a new line*/
+    margin-top: 100px; /* Adds space between labels and inputs */
+}
+
+input {
+    padding: 20;
+}
+
+.container {
+    background-color: #007BFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #070706 ;
+    width: 100%;
+    max-width: 1000px;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #080908; 
+}
+
+.input-section {
+    display:flexroot;
+    justify-content:flex-start;
+    height: 70px;
+    
+}
+
+#new-task {
+    display:inline-flexbox;
+    padding: 20px;
+    border: 1px solid #20f508;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#add-task {
+    display: flexbox;
+    padding: 20px 30px;
+    border: none;
+    background-color: #3afc0f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: #f71d1dfb;
+}
+
+ul {
+    font-size: large;
+    list-style:decimal;
+    padding: 20px;
+}
+
+li {
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f8fff8;
+    color: #f5f3f3;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #070606;
+}
+
+button.edit, button.delete {
+    background:#48e820;
+    border:#e41010;
+    cursor:pointer;
+    color: #fefefe;
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+button.edit:hover, button.delete:hover {
+    text-decoration:#48e820;
+    border-radius: 5px;
+    transform: scale(1.8);
+}
+input[type="checkbox"] {
+    transform: scale(1.5); /* Default size */
+    margin: 5px; /* Optional: Adjust the margin if necessary */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  input[type="checkbox"]:hover {
+    transform: scale(1.8); /* Size on hover */
+  }
